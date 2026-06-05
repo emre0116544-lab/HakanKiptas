@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakan KİPTAŞ | Dijital CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f0f0f;
+            --card-bg: #1e1e1e;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --accent-yellow: #FFD700;
+            --accent-red: #FF4D4D;
+            --gradient: linear-gradient(135deg, #FF4D4D 0%, #FFD700 100%);
+            --shadow: 0 8px 30px rgba(0,0,0,0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Profile Header */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 25px;
+            border-bottom: 4px solid var(--accent-red);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 40px;
+            font-weight: 700;
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 28px;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .summary {
+            color: var(--text-secondary);
+            font-size: 16px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Contact Bar */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--accent-yellow);
+            font-weight: 500;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .contact-item:hover {
+            color: var(--accent-red);
+        }
+
+        /* Card Sections */
+        .section {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            border-left: 5px solid transparent;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--accent-yellow);
+        }
+
+        .section-title i {
+            color: var(--accent-red);
+        }
+
+        .content-item {
+            margin-bottom: 15px;
+        }
+
+        .content-item h3 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .content-item p {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        /* Badges for Hobbies/Skills */
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge i {
+            color: var(--accent-red);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="avatar">HK</div>
+            <h1>Hakan KİPTAŞ</h1>
+            <p class="summary">Zeki, disiplinli ve çalışma arzusuyla dolu bir gencim. Haritacılık yeteneklerime ve teknik vizyonuma güveniyorum.</p>
+            
+            <div class="contact-info">
+                <a href="mailto:hakanxmr1@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> hakanxmr1@gmail.com
+                </a>
+                <span class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye
+                </span>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-graduation-cap"></i>
+                Eğitim Bilgileri
+            </div>
+            <div class="content-item">
+                <h3>İBB Kiptaş Mesleki ve Teknik Anadolu Lisesi</h3>
+                <p>11. Sınıf Öğrencisi</p>
+                <p><strong>Bölüm:</strong> Harita-Tapu-Kadastro</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-project-diagram"></i>
+                Projeler ve Başarılar
+            </div>
+            <div class="content-item">
+                <h3>eTwinning Projeleri</h3>
+                <p>Uluslararası işbirliği ve dijital projeler kapsamında aktif katılım ve başarılar.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-star"></i>
+                Hobiler ve İlgi Alanları
+            </div>
+            <div class="badge-container">
+                <div class="badge"><i class="fas fa-music"></i> Müzik Dinlemek</div>
+                <div class="badge"><i class="fas fa-microchip"></i> Teknoloji Meraklısı</div>
+                <div class="badge"><i class="fas fa-swimmer"></i> Yüzme</div>
+            </div>
+        </div>
+
+        <div class="section" style="border-left: 5px solid var(--accent-yellow);">
+            <div class="section-title">
+                <i class="fas fa-drafting-compass"></i>
+                Uzmanlık Alanı
+            </div>
+            <p style="font-size: 15px; color: var(--text-secondary);">
+                Harita, tapu ve kadastro alanında teknik çizim, ölçüm ve disiplinli çalışma prensipleri üzerine kendimi geliştiriyorum.
+            </p>
+        </div>
+
+        <footer>
+            &copy; 2024 Hakan KİPTAŞ - Tüm Hakları Saklıdır.
+        </footer>
+    </div>
+
+</body>
+</html>
